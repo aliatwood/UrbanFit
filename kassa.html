@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Till kassan - UrbanFit</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="bilder/Favicon.png" type="image/png">
+</head>
+<body>
+    <header>
+        <nav class="meny">
+            <a href="index.html" class="logo">🏪 UrbanFit</a>
+            <a href="produkter.html">👕 Produkter</a>
+            <a href="om-oss.html"> 👥 Om oss</a>
+            <a href="varukorg.html"> 🛒Varukorg</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Till kassan</h1>
+
+        <section class="checkout-form">
+            <h2>Dina uppgifter</h2>
+            <form id="checkout">
+                <label for="namn">Fullständigt namn</label>
+                <input type="text" id="namn" placeholder="Förnamn Efternamn" required>
+
+                <label for="adress">Adress</label>
+                <input type="text" id="adress" placeholder="Adress" required>
+
+                <label for="email">E-post</label>
+                <input type="email" id="email" placeholder="E-postadress" required>
+
+                <label for="telefon">Telefonnummer</label>
+                <input type="tel" id="telefon" placeholder="Telefonnummer" required>
+
+            </form>
+        </section>
+
+        <section class="checkout-summary">
+            <h2>Orderöversikt</h2>
+            <table class="varukorg">
+                <thead>
+                    <tr>
+                        <th>Produkt</th>
+                        <th>Pris</th>
+                        <th>Antal</th>
+                        <th>Totalt</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+            <p class="totalpris">Totalt: 0 kr</p>
+            <button type="submit" class="knapp">Slutför köp</button>
+        </section>
+    </main>
+    <script src="script.js"></script>
+
+    <footer class="fotnot">
+        <p>Telefon: 0123456789</p>
+        <p>E-post: info@urbanfit.com</p>
+        <p>&copy; 2026 UrbanFit</p>
+        <p>
+            <a href="index.html">Start</a> | 
+            <a href="produkter.html">Produkter</a> | 
+            <a href="om-oss.html">Om oss</a> | 
+            <a href="varukorg.html">Varukorg</a>
+        </p>
+    </footer>
