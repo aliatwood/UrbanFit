@@ -317,9 +317,76 @@ main{
     background-color: #cc0000;
 }
 
-@media (max-width: 600px){
+@media (max-width: 1023px){
+    .meny{
+        gap: 1.5rem;
+        padding: 0 1rem;
+    }
+    .meny a{
+        font-size: 1.4rem;
+    }
+    .hero{
+        min-height: 50vh;
+        padding: 2rem;
+    }
+    .hero h1{
+        font-size: 2rem;
+    }
+    .startprodukt{
+        max-width: 95%;
+    }
     .produktkort{
-        display: flex;
+        width: 12rem;
+    }
+    .om-oss{
+        max-width: 30rem;
+    }
+    .checkout-form, .checkout-summary{
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 600px){
+    .meny{
         flex-wrap: wrap;
+        gap: 0.8rem;
+        height: auto;
+        padding: 1rem;
+    }
+    .meny a{
+        font-size: 1.2rem;
+    }
+    .hero{
+        min-height: 40vh;
+        padding: 1.5rem;
+    }
+    .hero h1{
+        font-size: 1.5rem;
+    }
+    .hero p{
+        font-size: 0.9rem;
+    }
+    .startprodukt, .produktlista{
+        gap: 1rem;
+    }
+    .produktkort{
+        width: 100%;
+        max-width: 15rem;
+    }
+    .varukorg{
+        font-size: 0.85rem;
+    }
+    .varukorg th, .varukorg td{
+        padding: 0.5rem;
+    }
+    .knapp, .rensa-varukorg{
+        padding: 0.8rem;
+        font-size: 0.9rem;
+    }
+    .checkout-form, .checkout-summary{
+        padding: 1rem;
+    }
+    .fotnot{
+        font-size: 0.9rem;
     }
 }

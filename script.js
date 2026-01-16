@@ -51,15 +51,13 @@ function uppdateraVarukorg() {
             uppdateraVarukorg();
         });
 
-        // Ta bort-knapp
+
         rad.querySelector('.ta-bort').addEventListener('click', () => {
             varukorg = varukorg.filter(item => item.namn !== p.namn);
             localStorage.setItem('varukorg', JSON.stringify(varukorg));
             uppdateraVarukorg();
         });
     });
-
-    // Uppdatera totalpris
     const totalElement = document.querySelector('.totalpris');
     if (totalElement) totalElement.textContent = `Totalt: ${total} kr`;
 }
@@ -93,6 +91,32 @@ const checkoutForm = document.getElementById('checkout');
 if (checkoutForm) {
     checkoutForm.addEventListener('submit', (e) => {
         e.preventDefault();
+        alert('Tack för ditt köp! Din order är mottagen.');
+        varukorg = [];
+        localStorage.removeItem('varukorg');
+        window.location.href = 'index.html';
+    });
+}
+const slutforKopKnapp = document.querySelector('.checkout-summary .knapp');
+if (slutforKopKnapp) {
+    slutforKopKnapp.addEventListener('click', (e) => {
+        e.preventDefault();
+        
+        const namn = document.getElementById('namn');
+        const adress = document.getElementById('adress');
+        const email = document.getElementById('email');
+        const telefon = document.getElementById('telefon');
+        
+        if (!namn.value || !adress.value || !email.value || !telefon.value) {
+            alert('Vänligen fyll i alla fält!');
+            return;
+        }
+        
+        if (varukorg.length === 0) {
+            alert('Din varukorg är tom!');
+            return;
+        }
+        
         alert('Tack för ditt köp! Din order är mottagen.');
         varukorg = [];
         localStorage.removeItem('varukorg');
