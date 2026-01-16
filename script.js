@@ -63,7 +63,7 @@ function uppdateraVarukorg() {
 }
 
 
-const produktKnappar = document.querySelectorAll('.produktkort button');
+const produktKnappar = document.querySelectorAll('button[data-namn][data-pris]');
 if (produktKnappar.length > 0) {
     produktKnappar.forEach(btn => {
         btn.addEventListener('click', () => {

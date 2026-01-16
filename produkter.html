@@ -3,66 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Produkter</title>
+    <title>Produkter – UrbanFit</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="bilder/Favicon.png" type="image/png">
 </head>
 <body>
-    <header>
-        <nav class="meny">
-            <a href="index.html" class="logo">🏪 UrbanFit</a>
-            <a href="produkter.html">👕 Produkter</a>
-            <a href="om-oss.html"> 👥 Om oss</a>
-            <a href="varukorg.html"> 🛒Varukorg</a>
-        </nav>
-    </header>
-    <main>
-        <h1>Våra produkter</h1>
-        <section class="produktlista">
-            <article class="produktkort">
-                <img src="bilder/testhoodie.jpg" alt="Bild Urban Hoodie">
-                <h3>Urban Hoodie</h3>
-                <p class="pris">599 kr</p>
-                <button data-namn="Urban Hoodie" data-pris="599">Lägg till i varukorg</button>
-            </article>
-            <article class="produktkort">
-                <img src="bilder/testbildediterad.png" alt="Bild Urban T-shirt">
-                <h3>Urban T-shirt</h3>
-                <p class="pris">299 kr</p>
-                <button data-namn="Urban T-shirt" data-pris="299">Lägg till i varukorg</button>
-            </article>
-            <article class="produktkort">
-                <img src="bilder/testbyxa.jpg" alt="Bild Urban Byxor">
-                <h3>Urban Byxor</h3>
-                <p class="pris">399 kr</p>
-                <button data-namn="Urban Byxa" data-pris="399">Lägg till i varukorg</button>
-            </article>
-            <article class="produktkort">
-                <img src="bilder/testtröja.jpg" alt="Bild Urban Sweatshirt">
-                <h3>Urban Sweatshirt</h3>
-                <p class="pris">699 kr</p>
-                <button data-namn="Urban Sweatshirt" data-pris="699">Lägg till i varukorg</button>
-            </article>
-            <article class="produktkort">
-                <img src="bilder/testshorts.jpg" alt="Bild Urban Shorts">
-                <h3>Urban Shorts</h3>
-                <p class="pris">349 kr</p>
-                <button data-namn="Urban Shorts" data-pris="349">Lägg till i varukorg</button>
-            </article>
-        </section>
-    </main>
-    <script src="script.js"></script>
 
-    <footer class="fotnot">
-        <p>Telefon: 0123456789</p>
-        <p>E-post: info@urbanfit.com</p>
-        <p>&copy; 2026 UrbanFit</p>
-        <p>
-            <a href="index.html">Start</a> | 
-            <a href="produkter.html">Produkter</a> | 
-            <a href="om-oss.html">Om oss</a> | 
-            <a href="varukorg.html">Varukorg</a>
-        </p>
-    </footer>
+<header>
+    <nav class="meny">
+        <a href="index.html" class="logo">🏪 UrbanFit</a>
+        <a href="produkter.html">👕 Produkter</a>
+        <a href="om-oss.html">👥 Om oss</a>
+        <a href="varukorg.html">🛒 Varukorg</a>
+    </nav>
+</header>
+
+<main>
+    <h1>Våra produkter</h1>
+
+    <section class="produktlista">
+
+        <article class="produktkort">
+            <img src="bilder/testhoodie.jpg" alt="Bild Urban Hoodie">
+            <h3>Urban Hoodie</h3>
+            <p class="pris">599 kr</p>
+
+            <a href="hoodie.html" class="produkt-länk">Visa mer</a>
+
+            <button data-namn="Urban Hoodie" data-pris="599">
+                Lägg till i varukorg
+            </button>
+        </article>
+
+        <article class="produktkort">
+            <img src="bilder/testbildediterad.png" alt="Bild Urban T-shirt">
+            <h3>Urban T-shirt</h3>
+            <p class="pris">299 kr</p>
+
+            <a href="tshirt.html" class="produkt-länk">Visa mer</a>
+
+            <button data-namn="Urban T-shirt" data-pris="299">
+                Lägg till i varukorg
+            </button>
+        </article>
+
+        <article class="produktkort">
+            <img src="bilder/testbyxa.jpg" alt="Bild Urban Byxor">
+            <h3>Urban Byxor</h3>
+            <p class="pris">399 kr</p>
+
+            <a href="byxor.html" class="produkt-länk">Visa mer</a>
+
+            <button data-namn="Urban Byxor" data-pris="399">
+                Lägg till i varukorg
+            </button>
+        </article>
+
+        <article class="produktkort">
+            <img src="bilder/testtröja.jpg" alt="Bild Urban Sweatshirt">
+            <h3>Urban Sweatshirt</h3>
+            <p class="pris">699 kr</p>
+
+            <a href="sweatshirt.html" class="produkt-länk">Visa mer</a>
+
+            <button data-namn="Urban Sweatshirt" data-pris="699">
+                Lägg till i varukorg
+            </button>
+        </article>
+
+        <article class="produktkort">
+            <img src="bilder/testshorts.jpg" alt="Bild Urban Shorts">
+            <h3>Urban Shorts</h3>
+            <p class="pris">349 kr</p>
+
+            <a href="shorts.html" class="produkt-länk">Visa mer</a>
+
+            <button data-namn="Urban Shorts" data-pris="349">
+                Lägg till i varukorg
+            </button>
+        </article>
+
+    </section>
+</main>
+
+<script src="script.js"></script>
+
+<footer class="fotnot">
+    <p>Telefon: 0123456789</p>
+    <p>E-post: info@urbanfit.com</p>
+    <p>&copy; 2026 UrbanFit</p>
+    <p>
+        <a href="index.html">Start</a> | 
+        <a href="produkter.html">Produkter</a> | 
+        <a href="om-oss.html">Om oss</a> | 
+        <a href="varukorg.html">Varukorg</a>
+    </p>
+</footer>
+
 </body>
 </html>
