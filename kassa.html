@@ -23,18 +23,19 @@
         <section class="checkout-form">
             <h2>Dina uppgifter</h2>
             <form id="checkout">
-                <label for="namn">Fullständigt namn</label>
+                <label for="namn">Fullständigt namn <span class="obligatorisk">*</span></label>
                 <input type="text" id="namn" placeholder="Förnamn Efternamn" required>
 
-                <label for="adress">Adress</label>
+                <label for="adress">Adress <span class="obligatorisk">*</span></label>
                 <input type="text" id="adress" placeholder="Adress" required>
 
-                <label for="email">E-post</label>
+                <label for="email">E-post <span class="obligatorisk">*</span></label>
                 <input type="email" id="email" placeholder="E-postadress" required>
 
-                <label for="telefon">Telefonnummer</label>
+                <label for="telefon">Telefonnummer <span class="obligatorisk">*</span></label>
                 <input type="tel" id="telefon" placeholder="Telefonnummer" required>
 
+                <p class="obligatorisk-info"><span class="obligatorisk">*</span> Obligatoriska fält</p>
             </form>
         </section>
 
