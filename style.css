@@ -363,7 +363,13 @@ main{
     background-color: #FFD700;
     color: white;
 }
-
+.start-sida .meny a[href="index.html"],
+.produkter-sida .meny a[href="produkter.html"],
+.om-oss-sida .meny a[href="om-oss.html"],
+.varukorg-sida .meny a[href="varukorg.html"] {
+    font-weight: bold;
+    border-bottom: 3px solid #fff;
+}
 @media (max-width: 1023px){
     .meny{
         flex-wrap: wrap;
