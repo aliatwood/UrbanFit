@@ -390,6 +390,13 @@ main{
     color: #333;
     margin-top: 1em;
 }
+.video{
+    display: block;
+    margin: 20px auto;
+    width: 50%;
+    max-width: 400px;
+    border-radius: 1rem;
+}
 @media (max-width: 1023px){
     .meny{
         flex-wrap: wrap;
