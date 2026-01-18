@@ -35,6 +35,7 @@ body{
     color: white;
     text-align: center;
     padding: 1rem;
+    margin-top: auto;
 }
 .fotnot a{
     text-decoration: none;
@@ -53,6 +54,8 @@ main{
     margin: 2rem auto;
     gap: 2rem;
     font-family: arial, sans-serif;
+    width: 100%;
+    max-width: 100%;
 }
 .om-oss{
     display: flex;
@@ -61,8 +64,9 @@ main{
     text-align: center;
     justify-content: center;
     width: 90%;
-    max-width: 20rem;
+    max-width: 40rem;
     padding: 1rem;
+    max-width: 25rem;
 }
 .paragraf{
     line-height: 1.6;
@@ -78,6 +82,15 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 2rem 1rem;
+}
+.hero h1{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+.hero p{
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
 }
 .hero a{
     background-color: #2c5f2d;
@@ -86,6 +99,7 @@ main{
     border-radius: 15px;
     text-decoration: none;
     margin-top: 1rem;
+    transition: background-color 0.3s;
 }
 .hero a:hover{
     background-color: #FFD700;
@@ -103,28 +117,73 @@ main{
 }
 .startprodukt h2{
     width: 100%;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.produktkort{
+    background-color: lightcyan;
+    padding: 1rem;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 11rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.produktkort img{
+    width: 100%;
+    height: auto;
+    max-height: 25rem;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.produktkort p{
+    font-weight: bold;
 }
 .produktkort a{
     background-color: #2c5f2d;
     color: white;
-    padding: 1rem;
+    padding: 0.8rem;
     border-radius: 15px;
-    margin-top: 1rem;
+    margin-top: 0.5rem;
     display: inline-block;
+    text-decoration: none;
+    transition: background-color 0.3s;
 }
 .produktkort a:hover{
     background-color: #FFD700;
     color: #212A31;
+}
+.produktkort button{
+    background-color: #2c5f2d;
+    color: white;
+    padding: 0.8rem;
+    border-radius: 15px;
+    margin-top: 0.5rem;
     text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s;
+}
+.produktkort button:hover{
+    background-color: #FFD700;
+    color: #212A31;
 }
 .våramål{
-    padding: 1rem 1rem;
+    padding: 2rem 1rem;
     text-align: center;
     background-color: lightgreen;
+    border-radius: 10px;
+    max-width: 90%;
+}
+.våramål h2{
+    margin-bottom: 1rem;
 }
 .våramål p{
-    width: 20rem;
+    max-width: 40rem;
     line-height: 1.6;
+    margin: 0 auto 1rem;
 }
 .våramål a{
     background-color: #2c5f2d;
@@ -133,18 +192,21 @@ main{
     border-radius: 15px;
     margin-top: 1rem;
     display: inline-block;
+    text-decoration: none;
+    transition: background-color 0.3s;
 }
 .våramål a:hover{
     background-color: #FFD700;
     color: #212A31;
-    text-decoration: none;
 }
 .varukorg{
     width: 100%;
+    max-width: 100%;
     border-collapse: collapse;
+    overflow-x: auto;
 }
 .varukorg th, .varukorg td{
-    padding: 1rem 1rem;
+    padding: 1rem;
     text-align: center;
     background-color: white;
 }
@@ -163,24 +225,27 @@ main{
     color: white;
     padding: 1rem;
     border-radius: 15px;
-    margin-top: 0.1rem;
+    margin-top: 0.5rem;
     margin-right: 1rem;
     text-decoration: none;
-    display: inline-block; 
+    display: inline-block;
+    transition: background-color 0.3s;
+    border: none;
+    cursor: pointer;
 }
 .rensa-varukorg{
-    background-color: #2c5f2d;
+    background-color: #c62828;
     color: white;
     padding: 1rem;
     border-radius: 15px;
-    margin-top: 0.1rem;
+    margin-top: 0.5rem;
     margin-right: 1rem;
     text-decoration: none;
-    display: inline-block;  
+    display: inline-block;
+    transition: background-color 0.3s;
 }
 .rensa-varukorg:hover{
-    background-color: #FFD700;
-    color: #212A31;
+    background-color: #8b0000;
 }
 .knapp:hover{
     background-color: #FFD700;
@@ -191,39 +256,8 @@ main{
     flex-wrap: wrap;
     gap: 1.5rem;
     justify-content: center;
-}
-.produktkort{
-    background-color: lightcyan;
-    padding: 1rem;
-    border-radius: 10px;
-    text-align: center;
-    max-width: 11rem;
-    
-}
-.produktkort img{
     width: 100%;
-    max-height: 25rem;
-    object-fit: cover;
-    border-radius: 10px;
-}
-.produktkort p{
-    font-weight: bold;
-}
-.produktkort button{
-    background-color: #2c5f2d;
-    color: white;
-    padding: 1rem;
-    border-radius: 15px;
-    margin-top: 1rem;
-    margin-right: 1rem;
-    text-decoration: none;
-    display: inline-block;
-    cursor: pointer;
-    border: none;
-}
-.produktkort button:hover{
-    background-color: #FFD700;
-    color: #212A31;
+    max-width: 1200px;
 }
 .checkout-form{
     background-color: #f0f8ff;
@@ -298,11 +332,6 @@ main{
     color: white;
 }
 
-.totalpris {
-    text-align: right;
-    font-weight: bold;
-    font-size: 1.3rem;
-}
 .ta-bort{
     background-color: #c62828;
     color: white;
@@ -320,8 +349,9 @@ main{
     display: flex;
     gap: 2rem;
     max-width: 900px;
+    width: 90%;
     margin: 2rem auto;
-    align-items: center;
+    align-items: flex-start;
     background-color: #f0f8ff;
     padding: 2rem;
     border-radius: 1rem;
@@ -330,19 +360,33 @@ main{
 .produkt-sida img{
     width: 100%;
     max-width: 400px;
+    height: auto;
     border-radius: 1rem;
+    object-fit: cover;
 }
 
 .produkt-info{
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    flex: 1;
+}
+
+.produkt-info h1{
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
 }
 
 .produkt-info .pris{
     font-size: 1.5rem;
     font-weight: bold;
+    color: #2c5f2d;
 }
+
+.produkt-info p{
+    line-height: 1.6;
+}
+
 .produkt-länk{
     background-color: #212A31;
     color: white;
@@ -351,12 +395,15 @@ main{
     text-decoration: none;
     display: inline-block;
     margin-top: 0.5rem;
+    text-align: center;
+    transition: background-color 0.3s;
 }
 
 .produkt-länk:hover{
     background-color: #FFD700;
     color: #212A31;
 }
+
 .produkt-info button {
     background-color: #2c5f2d;
     color: white;
@@ -373,6 +420,7 @@ main{
     background-color: #FFD700;
     color: #212A31;
 }
+
 .start-sida .meny a[href="index.html"],
 .produkter-sida .meny a[href="produkter.html"],
 .om-oss-sida .meny a[href="om-oss.html"],
@@ -380,6 +428,7 @@ main{
     font-weight: bold;
     border-bottom: 3px solid #fff;
 }
+
 .obligatorisk {
     color: #c62828;
     font-weight: bold;
@@ -390,24 +439,27 @@ main{
     color: #333;
     margin-top: 1em;
 }
+
 .video{
     display: block;
     margin: 20px auto;
-    width: 50%;
+    width: 100%;
     max-width: 400px;
     border-radius: 1rem;
 }
+
 @media (max-width: 1023px){
     .meny{
         flex-wrap: wrap;
-        gap: 0.8rem;
+        gap: 1rem;
         height: auto;
         padding: 1rem;
-        justify-content: space-evenly;
+        justify-content: center;
         width: 100%;
     }
     .meny a{
-        font-size: 1.2rem;
+        font-size: 1.3rem;
+        padding: 0.5rem;
     }
     .hero{
         min-height: 50vh;
@@ -416,63 +468,237 @@ main{
     .hero h1{
         font-size: 2rem;
     }
+    .hero p{
+        font-size: 1.1rem;
+    }
     .startprodukt{
         max-width: 95%;
     }
     .produktkort{
-        width: 12rem;
+        max-width: 13rem;
     }
     .om-oss{
-        max-width: 30rem;
+        max-width: 35rem;
     }
     .checkout-form, .checkout-summary{
         max-width: 90%;
+    }
+    .produkt-sida{
+        flex-direction: column;
+        width: 95%;
+        align-items: center;
+    }
+    .produkt-sida img{
+        max-width: 100%;
+    }
+    .våramål p{
+        max-width: 35rem;
     }
 }
 
 @media (max-width: 600px){
     .meny{
         flex-wrap: wrap;
-        gap: 0.8rem;
+        gap: 0.5rem;
         height: auto;
-        padding: 1rem;
+        padding: 0.8rem;
         justify-content: space-evenly;
         width: 100%;
     }
     .meny a{
-        font-size: 1rem;
+        font-size: 0.9rem;
+        padding: 0.3rem 0.5rem;
     }
     .hero{
         min-height: 40vh;
-        padding: 1.5rem;
+        padding: 1.5rem 1rem;
     }
     .hero h1{
         font-size: 1.5rem;
+        padding: 0 0.5rem;
+        margin-bottom: 0.5rem;
     }
     .hero p{
         font-size: 0.9rem;
+        margin-bottom: 0.5rem;
     }
+    .hero a{
+        padding: 0.6rem 1.2rem;
+        font-size: 0.9rem;
+    }
+    
+    main{
+        padding: 1rem;
+        margin: 1rem auto;
+    }
+    
     .startprodukt, .produktlista{
         gap: 1rem;
+        max-width: 100%;
     }
+    
+    .startprodukt h2{
+        font-size: 1.5rem;
+    }
+    
     .produktkort{
         width: 100%;
-        max-width: 15rem;
+        max-width: 100%;
+        min-width: 280px;
     }
-    .varukorg{
-        font-size: 0.85rem;
+    
+    .produktkort img{
+        max-height: 20rem;
     }
-    .varukorg th, .varukorg td{
-        padding: 0.5rem;
-    }
-    .knapp, .rensa-varukorg{
-        padding: 0.8rem;
+    
+    .produktkort a,
+    .produktkort button{
+        padding: 0.7rem;
         font-size: 0.9rem;
     }
+    
+    .varukorg{
+        font-size: 0.75rem;
+        width: 100%;
+        display: table;
+        margin: 0 auto;
+    }
+    
+    .varukorg th, .varukorg td{
+        padding: 0.4rem;
+    }
+    
+    .totalpris{
+        font-size: 1.1rem;
+        margin-top: 1rem;
+    }
+    
+    .knapp, .rensa-varukorg{
+        padding: 0.7rem 1rem;
+        font-size: 0.85rem;
+        margin-right: 0.5rem;
+        margin-bottom: 0.5rem;
+        display: inline-block;
+    }
+    
     .checkout-form, .checkout-summary{
         padding: 1rem;
+        max-width: 100%;
+        width: 95%;
     }
-    .fotnot{
+    
+    .checkout-form h2,
+    .checkout-summary h2{
+        font-size: 1.3rem;
+    }
+    
+    .checkout-form input{
+        padding: 0.7rem;
         font-size: 0.9rem;
+    }
+    
+    .fotnot{
+        font-size: 0.85rem;
+        padding: 0.8rem;
+    }
+    
+    .fotnot p{
+        margin: 0.3rem 0;
+    }
+    
+    .produkt-sida{
+        flex-direction: column;
+        padding: 1rem;
+        gap: 1rem;
+        margin: 1rem auto;
+        width: 95%;
+    }
+    
+    .produkt-sida img{
+        max-width: 100%;
+    }
+    
+    .produkt-info h1{
+        font-size: 1.5rem;
+    }
+    
+    .produkt-info .pris{
+        font-size: 1.3rem;
+    }
+    
+    .produkt-info p{
+        font-size: 0.95rem;
+    }
+    
+    .produkt-info button{
+        padding: 0.8rem;
+        font-size: 0.95rem;
+    }
+    
+    .video{
+        width: 100%;
+        max-width: 100%;
+    }
+    
+    .våramål{
+        padding: 1.5rem 1rem;
+        width: 95%;
+    }
+    
+    .våramål h2{
+        font-size: 1.3rem;
+    }
+    
+    .våramål p{
+        width: 100%;
+        max-width: 100%;
+        font-size: 0.95rem;
+    }
+    
+    .våramål a{
+        padding: 0.8rem 1.2rem;
+        font-size: 0.9rem;
+    }
+    
+    .om-oss{
+        max-width: 100%;
+        width: 95%;
+        padding: 1rem;
+    }
+    
+    .om-oss h1{
+        font-size: 1.5rem;
+    }
+    
+    .paragraf{
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 374px){
+    .meny a{
+        font-size: 0.8rem;
+        padding: 0.2rem 0.3rem;
+    }
+    
+    .hero h1{
+        font-size: 1.3rem;
+    }
+    
+    .hero p{
+        font-size: 0.85rem;
+    }
+    
+    .produktkort{
+        min-width: 260px;
+    }
+    
+    .varukorg{
+        font-size: 0.7rem;
+    }
+    
+    .knapp, .rensa-varukorg{
+        padding: 0.6rem 0.8rem;
+        font-size: 0.8rem;
     }
 }
